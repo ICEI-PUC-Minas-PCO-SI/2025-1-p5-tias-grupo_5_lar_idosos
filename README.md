@@ -1,25 +1,26 @@
-# Nome do projeto
+# Elder Care
 
 `CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações para Sustentabilidade`
 
-`Xº semestre/ANO`
+`6º / 5º Período`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O projeto aqui contido é referente a implementação de um sistema de controle de estoque voltado para a gestão de pertences, permitindo um armazenamento detalhado e seguro das informações, mas que também pode abrangir o armazenamento de itens diversos dentro do negócio.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Jean Estanislau de Souza Guimarães
+* João Vitor de Souza França
+* Otávio Soares da Costa
+* Pedro Henrique Morais de Assis
+* Thiago Xavier Medina
+* Yuri Zocoli Silva
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Maria Ines Lage de Paula
+* Paulo Henrique Rodrigues
 
 ## Instruções de utilização
 
