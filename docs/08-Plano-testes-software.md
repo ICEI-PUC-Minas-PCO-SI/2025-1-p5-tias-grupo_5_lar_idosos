@@ -3,7 +3,9 @@
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>, <a href="05-Projeto-interface.md"> Projeto de interface</a>
 
 | **Caso de teste**  | **CT-001 – Cadastrar Gerente**  |
-|:---: |:---: |
+
+<br>
+
 | **Campo**                                        | **Descrição**                                                                                                                                                                     |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Requisito associado**                          | RF-001 – Cadastro de gerente                                                                                                                                                      |
@@ -12,8 +14,12 @@
 | **Critério de êxito**                            | O gerente é cadastrado com sucesso e aparece na lista de gerentes.                                                                                                                |
 | **Responsável pela elaboração do caso de teste** | *Jean Estanislau de Souza Guimarães*                                                                                                                                                    |
 
+<br>
+
 | **Caso de teste**  | **CT-002 – Cadastrar Morador**  |
-|:---: |:---: |
+
+<br>
+
 | **Campo**                                        | **Descrição**                                                                                                                                                   |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Requisito associado**                          | RF-003 – Cadastro de moradores                                                                                                                                  |
@@ -22,8 +28,12 @@
 | **Critério de êxito**                            | O morador é cadastrado e aparece na lista de moradores.                                                                                                         |
 | **Responsável pela elaboração do caso de teste** | *Jean Estanislau de Souza Guimarães*                                                                                                                                  |
 
+<br>
+
 | **Caso de teste**  | **CT-003 – Registrar Itens de Limpeza**  |
-|:---: |:---: |
+
+<br>
+
 | **Campo**                                        | **Descrição**                                                                                                                                                                      |
 | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Requisito associado**                          | RF-005 – Registro de itens de limpeza                                                                                                                                              |
@@ -32,26 +42,35 @@
 | **Critério de êxito**                            | O item é cadastrado e aparece na lista de itens de limpeza da casa.                                                                                                                |
 | **Responsável pela elaboração do caso de teste** | *Jean Estanislau de Souza Guimarães*                                                                                                                                                     |
 
+<br>
+
 | **Caso de teste**  | **CT-004 – Visualizar Itens de Cozinha**  |
-|:---: |:---: |
+
+<br>
+
 | **Campo**                                        | **Descrição**                                                                                                                                                                                          |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Requisito associado**                          | RF-008 – Visualizar itens de cozinha                                                                                                                                                                   |
 | **Objetivo do teste**                            | Verificar se o usuário consegue visualizar os itens de cozinha da casa vinculada.                                                                                                                      |
-| **Passos**                                       | - Acessar o sistema como Cozinheiro, Gerente, Faxineiro ou Cuidador  <br> - Navegar até "Estoque de Cozinha"  <br> - Selecionar a casa (se necessário)  <br> - Visualizar a lista de itens disponíveis |
+| **Passos**                                       | - Acessar o sistema como Cozinheiro ou Gerente  <br> - Navegar até "Estoque de Cozinha"  <br> - Visualizar a lista de itens disponíveis |
 | **Critério de êxito**                            | Os itens de cozinha são exibidos corretamente.                                                                                                                                                         |
 | **Responsável pela elaboração do caso de teste** | *Jean Estanislau de Souza Guimarães*                                                                                                                                                                         |
 
+<br>
+
 | **Caso de teste**  | **CT-005 – Gerar Relatório de Movimentação de Itens**  |
-|:---: |:---: |
+
+<br>
+
 | **Campo**                                        | **Descrição**                                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Requisito associado**                          | RF-009 – Gerar relatório de movimentação de itens                                                                                                              |
 | **Objetivo do teste**                            | Verificar se o Gerente consegue gerar relatórios de entrada e consumo de itens com filtros.                                                                    |
-| **Passos**                                       | - Acessar o sistema como Gerente  <br> - Navegar até "Relatórios"  <br> - Selecionar filtros de categoria, período e local  <br> - Clicar em "Gerar Relatório" |
+| **Passos**                                       | - Acessar o sistema como Gerente ou Admin  <br> - Navegar até "Relatórios"  <br> - Selecionar filtros de categoria, período e local  <br> - Clicar em "Gerar Relatório" |
 | **Critério de êxito**                            | O relatório é exibido corretamente com base nos filtros aplicados.                                                                                             |
 | **Responsável pela elaboração do caso de teste** | *Jean Estanislau de Souza Guimarães*                                                                                                                                 |
 
+<br>
 ## Ferramentas de testes (opcional)
 
 Comente sobre as ferramentas de testes utilizadas.
