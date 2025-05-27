@@ -1,13 +1,13 @@
 # Arquitetura da solução
 
 ## Segue conforme o planejamento as seguintes tecnologias : 
-### Front-end: HTML, JavaScript e CSS, garantindo uma interface simples e responsiva.
+Front-end: HTML, JavaScript e CSS, garantindo uma interface simples e responsiva.
 
-### Back-end: C# com ASP.NET, proporcionando segurança e facilidade na integração com o banco de dados.
+Back-end: C# com ASP.NET, proporcionando segurança e facilidade na integração com o banco de dados.
 
-### Banco de Dados: PostgreSQL, pela robustez e compatibilidade com a aplicação.
+Banco de Dados: PostgreSQL, pela robustez e compatibilidade com a aplicação.
 
-### Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL. (Provedor não escolhido ainda)
+Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL. (Provedor não escolhido ainda)
 
 ## Diagrama de classes
 
