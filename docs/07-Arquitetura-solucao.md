@@ -1,8 +1,11 @@
 # Arquitetura da solução
 
-O Projeto é estruturado com base no back end, front End e banco de dados, hospedados em algum provedor, ainda estamos decidindo o melhor caminho.
+## Segue conforme o planejamento as seguintes tecnologias : 
+Front-end: HTML, JavaScript e CSS, garantindo uma interface simples e responsiva.
+Back-end: C# com ASP.NET, proporcionando segurança e facilidade na integração com o banco de dados.
+Banco de Dados: PostgreSQL, pela robustez e compatibilidade com a aplicação.
+Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL. (Provedor não escolhido ainda)
 
-![Arquitetura da Solução](images/arquitetura.png)
 
 ## Diagrama de classes
 
