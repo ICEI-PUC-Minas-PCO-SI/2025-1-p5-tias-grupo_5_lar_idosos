@@ -57,14 +57,18 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
  ## User flow
 
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
-
-![Exemplo de user flow](images/user_flow.jpg)
-
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+    A[Início] --> B[Tela de Login]
+    B --> C{Credenciais válidas?}
+    C -- Sim --> D[Tela Inicial (Dashboard)]
+    C -- Não --> B
+    D --> E[Registrar Nova Solicitação]
+    E --> F[Preencher Formulário]
+    F --> G[Enviar Solicitação]
+    G --> H[Confirmação de Protocolo]
+    H --> I[Acompanhar Solicitação]
+    I --> J{Deseja Sair?}
+    J -- Sim --> K[Fim]
+    J -- Não --> D
 
 ### Diagrama de fluxo
 
