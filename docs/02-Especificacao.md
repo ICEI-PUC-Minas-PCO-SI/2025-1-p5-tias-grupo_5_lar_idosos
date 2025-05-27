@@ -80,7 +80,7 @@ Cada persona representa um usuário real do sistema, com objetivos e necessidade
 ![image](https://github.com/user-attachments/assets/2d747ec3-69d9-4c88-b51f-b0a8560b20dd)
 
 
-Descrição: Diagrama com atores (Administrador, Gerente, Cuidador, Faxineiro, Cozinheiro) e casos de uso vinculados aos requisitos funcionais.
+Descrição: Diagrama com atores (Administrador, Gerente, Cuidador) e casos de uso vinculados aos requisitos funcionais.
 
 ---
 
