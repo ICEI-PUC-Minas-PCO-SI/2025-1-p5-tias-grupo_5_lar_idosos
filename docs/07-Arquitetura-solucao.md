@@ -95,13 +95,34 @@ Estamos analisando a melhor forma de hospedar que seja eficiente e entregue uma 
 
 ## Qualidade de software
 
-Conceituar qualidade é uma tarefa complexa, mas ela pode ser vista como um método gerencial que, por meio de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+Conceituar qualidade é uma tarefa complexa, mas pode ser vista como um método gerencial que, por meio de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
 
 No contexto do desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem atendidas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, esse nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e nas respectivas subcaracterísticas, identifique as subcaracterísticas que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software, considerando alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão à equipe avaliar os objetos de interesse.
+## Norma ISO/IEC 25010
 
-> **Links úteis**:
-> - [ISO/IEC 25010:2011 - Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE) — System and Software Quality Models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de software - Engenharia de Software](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
+A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características principais e 30 subcaracterísticas de qualidade para produtos de software. Essas características abrangem aspectos como funcionalidade, usabilidade, confiabilidade, eficiência, mantenibilidade, portabilidade, segurança e compatibilidade.
+
+## Subcaracterísticas Selecionadas para o Projeto
+
+Considerando os objetivos do nosso projeto e aspectos simples de qualidade que queremos priorizar, nossa equipe optou por focar nas seguintes subcaracterísticas da ISO/IEC 25010:
+
+- **Funcionalidade - Adequação Funcional:** para garantir que o software entregue as funções necessárias e esperadas pelo usuário.
+- **Usabilidade - Operabilidade:** para assegurar que o software seja fácil de operar e aprender, melhorando a experiência do usuário.
+- **Confiabilidade - Tolerância a Falhas:** para que o software continue funcionando mesmo em situações inesperadas.
+- **Eficiência - Desempenho:** para que o software responda rapidamente e utilize os recursos de forma otimizada.
+- **Mantenibilidade - Modularidade:** para facilitar a atualização e manutenção futura do sistema.
+
+## Justificativa das Escolhas
+
+Essas subcaracterísticas foram escolhidas porque refletem diretamente as expectativas dos usuários finais e da equipe de desenvolvimento. A adequação funcional garante que o software entregue valor, enquanto a usabilidade assegura que os usuários consigam utilizar o sistema sem dificuldades. A confiabilidade e a eficiência impactam na robustez e na satisfação do cliente, reduzindo interrupções e melhorando a performance. Por fim, a modularidade é essencial para que o software possa evoluir sem grandes esforços ou riscos.
+
+## Métricas para Avaliação
+
+| Subcaracterística      | Métrica                                  | Descrição                                    |
+|-----------------------|-----------------------------------------|----------------------------------------------|
+| Adequação Funcional   | % de requisitos implementados           | Porcentagem dos requisitos funcionais atendidos |
+| Operabilidade         | Tempo médio para aprendizado do usuário | Tempo necessário para um novo usuário operar o sistema com proficiência |
+| Tolerância a Falhas   | Taxa de falhas críticas por período     | Número de falhas que causam interrupções críticas |
+| Desempenho            | Tempo médio de resposta                  | Tempo que o sistema leva para responder a uma solicitação |
+| Modularidade          | Número de módulos independentes          | Quantidade de módulos ou componentes separados que facilitam manutenção |
