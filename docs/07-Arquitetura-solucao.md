@@ -23,10 +23,6 @@ Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL.
  
 ### Modelo físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
-
 ```sql
 CREATE TABLE Login (
     idLogin INT PRIMARY KEY,
@@ -110,12 +106,8 @@ CREATE TABLE Moviments (
 );
 
 ```
-Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
-
 
 ## Tecnologias
-A implantação da aplicação será realizada em um ambiente único, hospedado em um serviço de web hosting que suportará a execução completa do sistema, incluindo front-end, back-end e banco de dados.
-
 
 - Tecnologias utilizadas:
 
