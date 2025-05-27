@@ -72,19 +72,43 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
 ### Diagrama de fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo, muitas vezes sem a necessidade de desenhar o design das telas da interface. Isso permite que o design das interações seja bem planejado e tenha impacto na qualidade do design do wireframe interativo que será desenvolvido logo em seguida.
-
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem, internamente, a indicação dos principais elementos de interface — tais como menus e acessos — e funcionalidades, como editar, pesquisar, filtrar e configurar, além da conexão entre esses boxes a partir do processo de interação.
-
-![Exemplo de diagrama de fluxo](images/diagrama_fluxo.jpg)
-
-> **Links úteis**:
-> - [Como criar um diagrama de fluxo de usuário](https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram)
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+Início
+  |
+  v
+Tela de Login
+  |
+  v
+[Credenciais válidas?] -- Sim --> Tela Inicial (Dashboard)
+  |                              |
+  |                              v
+  |                          Registrar Nova Solicitação
+  |                              |
+  |                              v
+  |                        Preencher Formulário
+  |                              |
+  |                              v
+  |                         Enviar Solicitação
+  |                              |
+  |                              v
+  |                     Confirmação de Protocolo
+  |                              |
+  |                              v
+  |                      Acompanhar Solicitação
+  |                              |
+  |                              v
+  |                     [Deseja Sair?] -- Sim --> Fim
+  |                              |
+  |                              No
+  |                              |
+  |                              v
+  |                      Tela Inicial (Dashboard)
+  |
+  No
+  |
+  v
+Tela de Login
 
 ## Wireframes
-
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
 
 ![Exemplo de wireframe](images/wireframe.png)
  
