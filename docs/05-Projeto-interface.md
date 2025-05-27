@@ -79,5 +79,5 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
 ### Tela de gestão
 
-![Wireframe](images/Gestão.PNG)
+![Wireframe](images/Gestao.PNG)
 
