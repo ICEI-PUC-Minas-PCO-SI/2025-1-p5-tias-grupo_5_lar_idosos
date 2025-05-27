@@ -78,30 +78,21 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
 ### Tela principal do sistema
 
-![Wireframe](images/Gestao.PNG)
+![Wireframe](images/PainelPrincipal.PNG)
 
-Descrição da tela principal do sistema.
+###  Telas do cadastro
 
-> Insira aqui a tela principal do sistema
+![Wireframe](images/Cadastro.PNG)
 
+### Tela de Login
 
-###  Telas do processo 1
+![Wireframe](images/Login.PNG)
 
-Descrição da tela relativa à atividade 1 do processo 1.
+### Telas de lista de itens
 
-> Insira aqui a tela da atividade 1
+![Wireframe](images/ListaItens.PNG)
 
-Descrição da tela relativa à atividade 2 do processo 1.
+### Tela de gestão
 
-> Insira aqui a tela da atividade 2
+![Wireframe](images/Gestão.PNG)
 
-
-### Telas do processo 2
-
-Descrição da tela relativa à atividade 1 do processo 2.
-
-> Insira aqui a tela da atividade 1
-
-Descrição da tela relativa à atividade 2 do processo 2.
-
-> Insira aqui a tela da atividade 2
