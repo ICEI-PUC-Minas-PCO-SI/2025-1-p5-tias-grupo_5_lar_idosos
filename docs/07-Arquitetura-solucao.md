@@ -6,6 +6,7 @@ O Projeto é estruturado com base no back end, front End e banco de dados, hospe
 
 ## Diagrama de classes
 
+![image](images/classes.PNG)
 
 ##  Modelo de dados
 
@@ -79,8 +80,6 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 
 ## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
 
 Estamos analisando a melhor forma de hospedar que seja eficiente e entregue uma bom desempenho aos usuários.
 
