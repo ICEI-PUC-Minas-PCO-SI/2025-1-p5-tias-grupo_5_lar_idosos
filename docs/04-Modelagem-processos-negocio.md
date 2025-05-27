@@ -1,75 +1,75 @@
-# Modelagem dos Processos de Negócio
+# 📊 Modelagem dos Processos de Negócio com Base na Estrutura do Banco de Dados
 
 ## 📌 Modelagem AS-IS (Situação Atual)
 
-Atualmente, os processos de atendimento e acompanhamento de solicitações são realizados de forma **manual e descentralizada**, o que gera uma série de ineficiências operacionais:
+Atualmente, o processo de controle de usuários, moradores, movimentações de estoque e registros é feito de forma **manual ou em sistemas não integrados**, o que gera os seguintes problemas:
 
-### Etapas da Situação Atual:
-- O cliente entra em contato por meios informais (telefone, e-mail).
-- O atendente registra a solicitação em planilhas ou anotações manuais.
-- A requisição é repassada manualmente a outros setores.
-- O retorno ao cliente depende de verificações pontuais, sem rastreabilidade.
-- Não há um histórico centralizado ou relatórios automatizados.
+### Etapas da Situação Atual
+- Cadastro e controle de usuários e moradores feito de forma isolada.
+- Movimentações de itens de estoque feitas sem validação ou rastreabilidade.
+- Comunicação entre setores ocorre por meios informais.
+- Dificuldade de auditar o uso de insumos e identificar responsáveis.
+- Ausência de controle automatizado sobre locais, acessos e entregas.
 
-### Problemas Identificados:
-- Falta de controle sobre prazos e prioridades.
-- Aumento do número de reclamações.
-- Baixa produtividade da equipe.
-- Comunicação falha entre os setores envolvidos.
+### Consequências
+- 🌐 Falta de integração entre usuários, estoques e movimentações.
+- ⏳ Atrasos no controle de materiais e baixa produtividade.
+- ❌ Perda de dados históricos e baixa rastreabilidade.
+- 📉 Dificuldade para gerar relatórios e indicadores de desempenho.
 
 ---
 
 ## 🚀 Modelagem TO-BE (Proposta de Solução)
 
-A proposta da equipe consiste na **implantação de um sistema centralizado**, que automatize e integre todas as etapas de solicitação e atendimento, com base em princípios de qualidade definidos pela **ISO/IEC 25010**.
+A proposta visa a **implantação de um sistema centralizado**, com base nas tabelas e relacionamentos existentes, que permita:
 
-### Funcionalidades Esperadas:
-- Registro eletrônico de todas as requisições, com geração de número de protocolo.
-- Acompanhamento do status da solicitação em tempo real.
-- Notificações automáticas para os responsáveis via e-mail/SMS.
-- Geração de relatórios gerenciais e indicadores de desempenho.
-- Armazenamento do histórico completo de solicitações e atendimentos.
+- 📥 Cadastro e autenticação de usuários via tabela `Login`.
+- 👥 Associação entre usuários, seus papéis (`Roles`) e locais de atuação (`Locals`).
+- 🏠 Controle dos moradores por local, via `Residents`.
+- 📦 Registro estruturado de itens e quantidades em estoque (`Storage`).
+- 🔁 Registro de movimentações com entrada/saída e rastreabilidade (`Moviments`).
 
----
-
-## 🎯 Limites da Solução
-
-- Requer **acesso à internet** para operação do sistema.
-- Demanda **treinamento inicial** para os usuários.
-- Pode envolver **custos de infraestrutura e manutenção**.
-
----
-
-## 🎯 Alinhamento com os Objetivos do Negócio
-
-- Redução de retrabalho.
-- Melhoria na comunicação entre setores.
-- Aumento da **transparência** e **rastreabilidade**.
-- Atendimento mais ágil, eficaz e orientado ao cliente.
+### Funcionalidades Esperadas
+- Cadastro completo de usuários com controle de acesso (login/senha e papel).
+- Associação de usuários a locais e moradores.
+- Controle de estoque por local e por morador, com histórico de alterações.
+- Movimentações registradas por data, usuário e quantidade.
+- Relatórios de desempenho, consumo, histórico de movimentações e auditoria.
 
 ---
 
 ## 🧩 Processos Modelados
 
-### 🔹 PROCESSO 1 – Registro de Solicitações
-- Recebe e registra solicitações de clientes por meio do sistema.
-- Gera número de protocolo automaticamente.
-- Reduz erros manuais e perdas de informação.
+### 🔹 PROCESSO 1 – Registro e Acesso de Usuário
+- Autenticação via `Login`.
+- Registro de acesso com IP (campo `Host`) e data (`LastAccess`).
+- Associação do usuário ao seu papel (admin, operador, etc.) via `Users_has_Roles`.
 
-### 🔹 PROCESSO 2 – Atendimento da Solicitação
-- Encaminhamento automático ao setor responsável.
-- Acompanhamento do status da solicitação.
-- Comunicação com o solicitante via e-mail ou SMS.
+### 🔹 PROCESSO 2 – Associação a Locais
+- Usuários são associados a locais via `Users_has_Locals`.
+- Cada local possui endereço e CNPJ.
+
+### 🔹 PROCESSO 3 – Gestão de Moradores
+- Cadastro de moradores em `Residents`, com CPF, nascimento, e local vinculado.
+- Observações e alterações registradas com data (`ChangeDate`).
+
+### 🔹 PROCESSO 4 – Controle de Estoque
+- Cadastro de itens em `Storage`, com nome, quantidade, categoria e unidade.
+- Associação do item a um local e morador, com rastreamento de alterações.
+
+### 🔹 PROCESSO 5 – Movimentações de Itens
+- Entrada/saída de materiais via `Moviments`.
+- Registro da direção (`Direct`: E/S), quantidade, data, usuário responsável e item movimentado.
 
 ---
 
 ## 📈 Indicadores de Desempenho
 
-| Indicador                     | Objetivo                                       | Descrição                                                   | Fonte de Dados         | Fórmula de Cálculo                                             |
-|------------------------------|------------------------------------------------|-------------------------------------------------------------|------------------------|----------------------------------------------------------------|
-| Percentual de Reclamações    | Avaliar a satisfação dos usuários              | Proporção de reclamações em relação ao total de atendimentos | Tabela Reclamações     | número de reclamações / número total de atendimentos           |
-| Taxa de Requisições Atendidas| Medir a eficácia no atendimento                | Percentual de requisições atendidas na semana                | Tabela Solicitações    | (requisições atendidas / requisições totais) * 100             |
-| Taxa de Entrega de Material  | Controlar entregas concluídas                  | Percentual de pedidos entregues dentro do prazo mensal       | Tabela Pedidos         | (pedidos entregues / pedidos totais) * 100                     |
-| Tempo Médio de Atendimento   | Reduzir tempo de resposta                      | Tempo médio entre a solicitação e a conclusão do atendimento | Tabela Atendimentos    | soma dos tempos de atendimento / número de atendimentos        |
-| Índice de Satisfação do Cliente | Medir percepção de valor pelos usuários     | Avaliação pós-atendimento via formulário                     | Tabela Avaliações      | (soma das notas de satisfação / número total de respostas) * 100 |
+| Indicador                      | Objetivo                                  | Fonte de Dados     | Fórmula de Cálculo                                                                 |
+|-------------------------------|-------------------------------------------|--------------------|------------------------------------------------------------------------------------|
+| **Tempo Médio de Movimentação** | Medir agilidade no processo de estoque    | Moviments          | Média do tempo entre registros sucessivos de movimentação                         |
+| **Itens mais Movimentados**    | Identificar insumos com maior uso         | Moviments + Storage| `COUNT(*)` agrupado por `Storage_idStorage` e ordenado em ordem decrescente       |
+| **Quantidade Total em Estoque**| Avaliar a quantidade atual por categoria  | Storage            | `SUM(Quantity)` agrupado por `Category`                                           |
+| **Movimentações por Usuário**  | Rastrear produtividade/responsabilidade   | Moviments + Users  | `COUNT(*)` agrupado por `Users_idUsers`                                           |
+| **Taxa de Alteração de Estoque**| Avaliar frequência de mudanças            | Moviments          | `(Número de movimentações / total de itens) * 100`                                |
 
