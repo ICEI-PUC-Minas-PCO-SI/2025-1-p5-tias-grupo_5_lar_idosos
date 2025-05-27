@@ -2,62 +2,66 @@
 
 ## Visão Geral do Projeto
 
-O presente projeto, de caráter extensionista, visa desenvolver uma **solução web para gerenciamento de pertences pessoais dos residentes** e itens gerais nas unidades da casa de repouso Alegro Vivare. Atualmente, a instituição parceira realiza o controle desses itens de forma manual, por meio de anotações em caderno, o que gera inconsistências, dificuldades de rastreabilidade e insatisfação da equipe. A proposta busca automatizar esse processo, garantindo maior segurança, eficiência e transparência na gestão de pertences, além de promover impacto social positivo junto à comunidade idosa.
+Neste trabalho de extensão, nós, alunos do quinto e sexto período de Sistemas de Informação, estamos desenvolvendo uma **aplicação web para gerenciar pertences pessoais dos residentes** e itens gerais da casa de repouso Alegro Vivare. Até então, o controle era feito manualmente em cadernos, o que acaba gerando erros de identificação, dificuldades para encontrar informações e insatisfação da equipe. Nossa proposta é automatizar esse processo, tornando-o mais seguro, rápido e transparente, e assim contribuir com a instituição e a comunidade idosa.
 
 ## Cliente
 
-**Alegro Vivare – Casa de Repouso para Idosos**
+### Alegro Vivare – Casa de Repouso para Idosos
 
-- **Missão:** Promover a qualidade de vida da terceira idade, oferecendo cuidado, atenção e conforto em um ambiente familiar e seguro.  
-- **Visão:** Consolidar-se como referência em cuidado humanizado para idosos, combinando práticas inovadoras e acolhimento.  
-- **Valores:** Respeito, dignidade, empatia, segurança e excelência no atendimento.  
-- **Ramo de atuação:** Serviços de hospedagem, acompanhamento médico e atividades de lazer para pessoas idosas.  
-- **Porte e estrutura:** Fundada em 2021, com duas unidades em Contagem (MG):  
-  - Unidade 1: Rua Courupita, 1334, Eldorado;  
-  - Unidade 2: Rua Iretama, 449, Novo Eldorado.  
-- **Desafios principais:** Ausência de sistemas tecnológicos para processos internos, especialmente no controle de inventário de pertences; necessidade de rastreabilidade e relatórios precisos para familiares e gestores.  
-- **Impacto social:** Atendimento a demandas de longa permanência e temporária, com protocolos rigorosos de saúde e equipe capacitada 24 h, fortalecendo vínculos entre universidade e comunidade.
+- **Missão:** Cuidar com respeito e dignidade das pessoas idosas, oferecendo conforto e segurança.  
+- **Visão:** Ser referência em atendimento humanizado para terceira idade.  
+- **Valores:** Empatia, responsabilidade, excelência e acolhimento.  
+- **Atuação:** Hospedagem, acompanhamento médico e atividades de lazer para idosos.  
+- **Estrutura:** Fundada em 2021, com duas unidades em Contagem (MG):  
+  - Rua Courupita, 1334 – Eldorado  
+  - Rua Iretama, 449 – Novo Eldorado  
+- **Desafios:** Falta de tecnologia em processos internos, especialmente no controle de inventário de pertences; necessidade de rastreabilidade e geração de relatórios claros para familiares e gestores.
 
 ## Problema
 
-O registro manual dos pertences dos residentes e dos itens gerais da instituição é feito em um caderno, contendo apenas tipo e quantidade do objeto. Esse procedimento apresenta:
+Atualmente, o registro de pertences dos moradores e de insumos recebidos é feito em um caderno, anotando apenas o tipo e a quantidade. Isso traz vários problemas:
 
-- **Inconsistências e erros de identificação**, pois não há vínculo claro entre o residente e seu pertence;  
-- **Dificuldade de rastreabilidade**, inviabilizando consultas ágeis por parte de familiares ou gestores;  
-- **Insatisfação dos funcionários**, que relatam falta de praticidade e risco de perda de informações;  
-- **Ausência de relatórios gerenciais**, impossibilitando análise de consumo e tomada de decisões estratégicas.
+1. Não há ligação clara entre cada pertence e seu proprietário, permitindo perdas e disputas.  
+2. As consultas são lentas, pois dependem da busca manual em várias páginas.  
+3. A equipe sente falta de praticidade e teme a perda de informações importantes.  
+4. Não existem relatórios que ajudem na tomada de decisão ou no planejamento de compras.
 
 ## Objetivos
 
 ### Objetivo Geral
 
-Desenvolver um **sistema web de gestão de pertences** dos internos e itens gerais da casa de repouso Alegro Vivare, oferecendo cadastro detalhado, rastreabilidade e relatórios analíticos.
+Desenvolver um **sistema web de gestão de pertences** para a Alegro Vivare, com cadastro individualizado, rastreabilidade e relatórios automáticos.
 
 ### Objetivos Específicos
 
-1. Implementar módulos para cadastro, edição e exclusão de pertences vinculados a cada residente.  
-2. Integrar funcionalidades de inventário de insumos adquiridos e recebidos por doações.  
-3. Gerar relatórios de consumo por período e comparativos entre unidades.  
-4. Permitir o gerenciamento de múltiplas unidades, com segurança e controle de acesso por perfil.  
-5. Fornecer interface responsiva e intuitiva, adequada ao nível de familiaridade tecnológica da equipe.
+- Criar funcionalidades para cadastrar, editar e remover pertences vinculados aos residentes.  
+- Controlar insumos comprados pela instituição e insumos doados por familiares.  
+- Gerar relatórios de consumo por período e comparativos entre unidades.  
+- Permitir o gerenciamento de múltiplas unidades, com níveis de acesso diferentes (administrador, usuário padrão).  
+- Desenvolver interface responsiva e intuitiva, considerando o perfil dos usuários.
 
 ## Justificativa
 
-A digitalização do controle de pertences oferecerá benefícios significativos à Alegro Vivare:
+A automação desse controle vai:
 
-- **Precisão na identificação** de objetos, evitando disputas e extravios;  
-- **Agilidade na consulta de informações**, reduzindo retrabalhos e tempo gasto com buscas manuais;  
-- **Base para tomada de decisão**, por meio de relatórios de consumo e inventário;  
-- **Profissionalização dos processos**, fortalecendo a gestão institucional.
+- Eliminar erros de identificação e extravios de pertences.  
+- Agilizar consultas e reduzir retrabalho manual.  
+- Fornecer dados para análises gerenciais e planejamento de compras.  
+- Profissionalizar os processos internos da instituição.
 
-Além disso, o desenvolvimento do sistema contribui para os Objetivos de Desenvolvimento Sustentável (ODS) 3 (Saúde e Bem-Estar), 11 (Cidades e Comunidades Sustentáveis) e 12 (Consumo e Produção Responsáveis), ao promover eficiência, reduzir desperdícios e garantir ambientes mais seguros. O projeto, ainda, reforça o papel extensionista da universidade, aproximando acadêmicos e comunidade idosa.
+Além disso, nosso projeto está alinhado com os Objetivos de Desenvolvimento Sustentável:
+
+- **ODS 3 (Saúde e Bem-Estar):** Melhora da qualidade de vida dos residentes.  
+- **ODS 11 (Cidades e Comunidades Sustentáveis):** Fortalecimento de comunidades locais.  
+- **ODS 12 (Consumo e Produção Responsáveis):** Redução de desperdícios.
 
 ## Público-Alvo
 
-A aplicação será utilizada pelos **funcionários e gestores** da Alegro Vivare, contemplando perfis como:
+O sistema será usado pelos seguintes perfis na Alegro Vivare:
 
-- **Coordenador Administrativo:** Necessita de acesso a relatórios consolidados e controle de múltiplas unidades;  
-- **Auxiliar de Enfermagem:** Realiza registro diário de pertences e atualizações de inventário;  
-- **Responsável de Almoxarifado:** Gestiona insumos adquiridos e recebidos por doações.
+- **Administrador:** Acessa todas as funções, gerencia unidades e gera relatórios.  
+- **Auxiliar de Enfermagem:** Cadastra e atualiza pertences dos residentes.  
+- **Responsável de Almoxarifado:** Registra entradas de insumos comprados ou doados.
 
-Esses perfis possuem **nível médio de familiaridade com tecnologia**, demandando uma interface simples, clara e responsiva, com fluxos de trabalho otimizados.
+Todos os perfis têm familiaridade baixa ou média com tecnologia, portanto a interface será direta, com menus claros e fluxos simples.
+EOF
