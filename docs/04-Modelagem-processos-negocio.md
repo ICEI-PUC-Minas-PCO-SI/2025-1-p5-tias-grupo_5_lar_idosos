@@ -1,43 +1,71 @@
-# Modelagem dos processos de negócio
+# 📊 Modelagem dos Processos de Negócio
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
+## 📌 Modelagem AS-IS (Situação Atual)
 
-> **Links úteis**:
-> - [Modelagem de processos AS-IS x TO-BE](https://dheka.com.br/modelagem-as-is-to-be/)
-> - [20 dicas práticas de modelagem de processos](https://dheka.com.br/20-dicas-praticas-de-modelagem-de-processos/)
+A situação atual envolve a gestão **manual e descentralizada** dos processos de atendimento e acompanhamento de solicitações feitas por usuários. Não há um sistema único responsável por centralizar os pedidos, o que gera **retrabalho**, **comunicação falha**, **atrasos no atendimento** e **baixa rastreabilidade** das ações executadas.
 
-## Modelagem da situação atual (Modelagem AS IS)
+As etapas geralmente incluem:
 
-Apresente uma descrição textual de como os sistemas atuais resolvem o problema que seu projeto se propõe a resolver. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
+1. O cliente entra em contato por meios informais (telefone, e-mail).
+2. O atendente anota a solicitação em planilhas ou cadernos.
+3. A requisição é passada manualmente a outros setores.
+4. O retorno ao cliente depende da verificação pontual e não é rastreado.
+5. Não há histórico centralizado ou relatórios automatizados.
 
-Com o tema do projeto definido, escolham alguns processos no contexto de negócios. Para ilustrar os potenciais ganhos com a automatização, imaginem processos manuais, ineficientes e/ou com muitas idas e vindas, gerando, assim, retrabalho. Colem aqui os modelos dos processos atuais (modelo AS-IS), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
+A ausência de automação resulta em:
 
-## Descrição geral da proposta (Modelagem TO BE)
+- Falta de controle dos prazos.
+- Aumento de reclamações.
+- Baixa produtividade da equipe.
 
-Tendo identificado os gargalos dos modelos AS-IS, apresentem uma descrição da proposta de solução, buscando maior eficiência com a introdução da tecnologia. Abordem também os limites dessa solução e seu alinhamento com as estratégias e objetivos do contexto de negócio escolhido.
+## 🚀 Modelagem TO-BE (Proposta de Solução)
 
-Cole aqui os modelos da solução proposta (modelo TO-BE), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina. Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.
+A proposta de solução consiste na **implementação de um sistema centralizado** que automatize e integre os processos de solicitação e atendimento. Esse sistema será capaz de:
 
-Apresente aqui uma descrição da sua proposta, abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente também as oportunidades de melhoria.
+- Registrar todas as requisições com número de protocolo.
+- Acompanhar o status em tempo real.
+- Notificar os responsáveis por meio de alertas.
+- Gerar relatórios de desempenho.
+- Armazenar o histórico completo de interações.
 
-## Modelagem dos processos
+### 🎯 Limites da Solução
 
-[PROCESSO 1 - Nome do processo](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
+- Dependência de acesso à internet.
+- Necessidade de capacitação inicial dos usuários.
+- Eventuais custos com infraestrutura e manutenção.
 
-[PROCESSO 2 - Nome do processo](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
+### 🎯 Alinhamento com os objetivos do negócio
 
+- Redução de retrabalho.
+- Melhoria na comunicação entre setores.
+- Aumento da transparência e rastreabilidade.
+- Atendimento mais ágil e eficiente ao cliente.
 
-## Indicadores de desempenho
+## 🧩 Processos Modelados
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Coloque no mínimo 5 indicadores.
+### PROCESSO 1 - Registro de Solicitações
 
-Use o seguinte modelo:
+- Recebe e registra solicitações de clientes via sistema.
+- Gera número de protocolo automaticamente.
+- Reduz erros de digitação e perda de informações.
 
-| **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
-| ---           | ---           | ---           | ---             | ---             |
-| Percentual de reclamações | Avaliar quantitativamente as reclamações | Percentual de reclamações em relação ao total de atendimentos | Tabela Reclamações | número total de reclamações / número total de atendimentos |
-| Taxa de requisições atendidas | Melhorar a prestação de serviços medindo a porcentagem de requisições atendidas| Mede a % de requisições atendidas na semana | Tabela Solicitações | (número de requisições atendidas / número total de requisições) * 100 |
-| Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês | Tabela Pedidos | (número de pedidos entregues / número total de pedidos) * 100 |
+### PROCESSO 2 - Atendimento da Solicitação
 
+- Encaminhamento automático ao setor responsável.
+- Acompanhamento do status da solicitação.
+- Comunicação com o solicitante por e-mail ou SMS.
 
-Obs.: todas as informações necessárias para gerar os indicadores devem estar no diagrama de classe a ser apresentado posteriormente.
+---
+
+## 📈 Indicadores de Desempenho
+
+| Indicador                       | Objetivos                                                              | Descrição                                                                 | Fonte de dados         | Fórmula de cálculo                                                                 |
+|--------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------|
+| Percentual de reclamações      | Avaliar quantitativamente as reclamações                              | Percentual de reclamações em relação ao total de atendimentos             | Tabela Reclamações     | número total de reclamações / número total de atendimentos                        |
+| Taxa de requisições atendidas  | Melhorar a prestação de serviços medindo a porcentagem de requisições | Mede a % de requisições atendidas na semana                              | Tabela Solicitações    | (número de requisições atendidas / número total de requisições) * 100            |
+| Taxa de entrega de material    | Manter controle sobre os materiais que estão sendo entregues          | Mede % de material entregue dentro do mês                                 | Tabela Pedidos         | (número de pedidos entregues / número total de pedidos) * 100                     |
+| Tempo médio de atendimento     | Reduzir o tempo de resposta ao cliente                                 | Mede o tempo médio entre solicitação e conclusão                          | Tabela Atendimentos    | soma dos tempos de atendimento / número total de atendimentos                     |
+| Índice de satisfação do cliente| Medir o nível de contentamento dos usuários                            | Avaliação via formulário após conclusão do atendimento                    | Tabela Avaliações      | (soma das notas de satisfação / número total de respostas) * 100                  |
+
+---
+
