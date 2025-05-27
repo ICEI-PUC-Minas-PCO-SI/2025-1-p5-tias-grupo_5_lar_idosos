@@ -11,7 +11,7 @@ Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL.
 
 ## Diagrama de classes
 
-![image](images/classes.PNG)
+![image](images/DiagramaClasses.PNG)
 
 ##  Modelo de dados
 
