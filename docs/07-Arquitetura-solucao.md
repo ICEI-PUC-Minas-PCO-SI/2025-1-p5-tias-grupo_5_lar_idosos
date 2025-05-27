@@ -76,7 +76,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 | Front-end      | HTML + CSS + JS + React |
 | Back-end       | Node.js         |
 | SGBD           | PostGreSQL          |
-| Deploy         | Vercel          |
+| Desenvolvimento         | VS Code          |
 
 
 ## Hospedagem
