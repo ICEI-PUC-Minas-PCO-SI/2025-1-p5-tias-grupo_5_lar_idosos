@@ -84,8 +84,8 @@ Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL.
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
 | Front-end      | HTML + CSS + JS + React |
-| Back-end       | Node.js         |
-| SGBD           | PostGreSQL          |
+| Back-end       | C# ASP.NET         |
+| SGBD           | SQL          |
 | Desenvolvimento         | VS Code          |
 
 
