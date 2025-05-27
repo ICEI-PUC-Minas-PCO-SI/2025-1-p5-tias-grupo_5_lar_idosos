@@ -72,41 +72,7 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
 ### Diagrama de fluxo
 
-Início
-  |
-  v
-Tela de Login
-  |
-  v
-[Credenciais válidas?] -- Sim --> Tela Inicial (Dashboard)
-  |                              |
-  |                              v
-  |                          Registrar Nova Solicitação
-  |                              |
-  |                              v
-  |                        Preencher Formulário
-  |                              |
-  |                              v
-  |                         Enviar Solicitação
-  |                              |
-  |                              v
-  |                     Confirmação de Protocolo
-  |                              |
-  |                              v
-  |                      Acompanhar Solicitação
-  |                              |
-  |                              v
-  |                     [Deseja Sair?] -- Sim --> Fim
-  |                              |
-  |                              No
-  |                              |
-  |                              v
-  |                      Tela Inicial (Dashboard)
-  |
-  No
-  |
-  v
-Tela de Login
+![Diagrama de Fluxo](images/Diagrama de fluxo.PNG)
 
 ## Wireframes
 
