@@ -65,10 +65,15 @@ Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](.
 
 
 ## Tecnologias
+A implantação da aplicação será realizada em um ambiente único, hospedado em um serviço de web hosting que suportará a execução completa do sistema, incluindo front-end, back-end e banco de dados.
 
-Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+- Tecnologias utilizadas:
+
+Front-end: HTML, JavaScript e CSS, garantindo uma interface simples e responsiva.
+Back-end: C# com ASP.NET, proporcionando segurança e facilidade na integração com o banco de dados.
+Banco de Dados: PostgreSQL, pela robustez e compatibilidade com a aplicação.
+Hospedagem: Serviço de Web Hosting com suporte a aplicações .NET e banco SQL. (Provedor não escolhido ainda)
 
 
 | **Dimensão**   | **Tecnologia**  |
