@@ -72,7 +72,7 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
 ### Diagrama de fluxo
 
-![Diagrama de Fluxo](images/Diagrama de fluxo.PNG)
+![Wireframe](images/Diagrama_de_fluxo.png)
 
 ## Wireframes
 
