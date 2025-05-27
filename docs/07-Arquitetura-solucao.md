@@ -6,29 +6,15 @@ O Projeto é estruturado com base no back end, front End e banco de dados, hospe
 
 ## Diagrama de classes
 
-![image](images/classes.PNG)
 
 ##  Modelo de dados
 
 ![image](images/BD.PNG)
+
 ### Modelo ER
 
-O Modelo ER representa, por meio de um diagrama, como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
-
-> **Links úteis**:
-> - [Como fazer um diagrama entidade relacionamento](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
-### Esquema relacional
-
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
+![image](images/classes.PNG)
  
-
-![Exemplo de um modelo relacional](images/modelo_relacional.png "Exemplo de modelo relacional.")
----
-
-> **Links úteis**:
-> - [Criando um modelo relacional - documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/12.0.0?topic=designer-creating-relational-model)
-
 ### Modelo físico
 
 Insira aqui o script de criação das tabelas do banco de dados.
@@ -88,7 +74,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 | ---            | ---             |
 | Front-end      | HTML + CSS + JS + React |
 | Back-end       | Node.js         |
-| SGBD           | MySQL           |
+| SGBD           | PostGreSQL          |
 | Deploy         | Vercel          |
 
 
@@ -96,11 +82,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 Explique como a hospedagem e o lançamento da plataforma foram realizados.
 
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Estamos analisando a melhor forma de hospedar que seja eficiente e entregue uma bom desempenho aos usuários.
 
 ## Qualidade de software
 
