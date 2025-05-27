@@ -55,22 +55,7 @@ As interfaces foram elaboradas a partir de:
 
 Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-BE e estão disponíveis em formato interativo.
 
- ## User flow
-
-    A[Início] --> B[Tela de Login]
-    B --> C{Credenciais válidas?}
-    C -- Sim --> D[Tela Inicial (Dashboard)]
-    C -- Não --> B
-    D --> E[Registrar Nova Solicitação]
-    E --> F[Preencher Formulário]
-    F --> G[Enviar Solicitação]
-    G --> H[Confirmação de Protocolo]
-    H --> I[Acompanhar Solicitação]
-    I --> J{Deseja Sair?}
-    J -- Sim --> K[Fim]
-    J -- Não --> D
-
-### Diagrama de fluxo
+## Diagrama de fluxo
 
 ![Wireframe](images/Diagrama_de_fluxo.png)
 
@@ -86,7 +71,7 @@ Os wireframes foram desenvolvidos com base nos fluxos definidos na modelagem TO-
 
 ### Tela de Login
 
-![Wireframe](images/Login.PNG)
+![Wireframe](images/login.PNG)
 
 ### Telas de lista de itens
 
