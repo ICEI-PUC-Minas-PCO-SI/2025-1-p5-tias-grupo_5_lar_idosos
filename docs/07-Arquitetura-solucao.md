@@ -6,7 +6,7 @@ O Projeto é estruturado com base no back end, front End e banco de dados, hospe
 
 ## Diagrama de classes
 
-![image](images/classe.PNG)
+![image](images/classes.PNG)
 
 ##  Modelo de dados
 
